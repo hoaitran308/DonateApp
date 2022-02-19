@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <form method="post">
+        <button type="submit">Donate</button>
+    </form>
+    <hr />
+    <p>Donate in Session: @Model.moneyInSession</p>
+    <p>Donate in Cache: @Model.moneyInCache</p>
+</div>
